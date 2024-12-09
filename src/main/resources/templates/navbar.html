@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>NavigationBar</title>
+
+</head>
+<body>
+
+<nav th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a class="nav-link" th:href="@{/home}">Présentation</a></li>
+
+            <li><a class="nav-link" th:href="@{/consultations}">Consultations</a></li>
+
+            <li><a class="nav-link" th:href="@{/experiences}">Expériences</a></li> 
+            
+            <li><a class="nav-link" th:href="@{/infos_pratiques}">Informations pratiques</a></li> 
+
+            <li><a class="nav-link" th:href="@{/prendre_rdv}">Prendre rendez-vous</a></li> 
+        </ul>
+    </div>    
+</nav>
+
+</body>
+</html>
