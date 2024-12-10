@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <link th:href="@{styles/css/app.css}"
+            rel="stylesheet" />
+    
+            <div class="alice">Alice THEBAULT <br>
+            Psychologue Clinicienne</div>
+            <aside>
+                <a href="https://www.doctolib.fr/psychologue/casson/alice-thebault" target="_blank">Prendre rendez-vous en ligne</a>
+              </aside>
+    
+            <div th:insert="navbar :: navbar"></div>   
+        </header>
+    </body>
+    </html>
