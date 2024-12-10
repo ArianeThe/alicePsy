@@ -1,6 +1,6 @@
 
 
-main {
+/*main {
 
     margin-bottom: 100px;
  
@@ -8,7 +8,7 @@ main {
  
      margin-right: 5%;
  
- }
+ }*/
  
  
  
@@ -17,16 +17,12 @@ main {
  /*Formatting titre site*/
  
  .alice{
- 
      display: flex;
- 
      justify-content: center;
- 
      align-items: center;
- 
      font-size: 40px;
- 
- }
+     font-weight: bold;
+  }
  
  
  
@@ -63,94 +59,50 @@ main {
  /*formatting the footer*/
  
  .footer {
- 
      width: 100%;
- 
      height: 80px;
- 
      display: flex;
- 
      flex-direction: column;
- 
      position: fixed;
- 
      bottom: 0;
- 
      text-align: center;
- 
      justify-content: space-between;
- 
      background: #d5dad1;
- 
      filter: opacity(80%);
- 
      overflow:hidden;
- 
-     }
+      }
 
  
  /*formatting navbar */
  
- nav
- 
- {
- 
-     margin: 10px auto;
- 
-     width: 100%;
- 
-     height: 52px;
- 
+ nav {
+      margin: 10px auto;
+      width: 100%;
+      height: 52px;
      background: #a4b197;
+  }
+  
  
- }
- 
- 
- 
- nav .main_pages
- 
- {
- 
+ nav .main_pages  { 
      display: flex;
- 
-     justify-content: space-around;
- 
-     align-items: center;
- 
- 
- 
+      justify-content: space-around;
+      align-items: center;
      }
  
  
- 
- nav .main_pages a
- 
- {
- 
-     display: flex;
- 
-     list-style: none;
- 
-     position: center;
- 
-     text-decoration: none;
- 
-     font-size:18px;
- 
-     width: 20%;
- 
+ nav .main_pages a { 
+        list-style: none; 
+        text-decoration: none; 
+        font-size: 18px; 
+        padding: 10px 20px; /* Ajoute du padding pour espacer les liens */ 
+       /* text-align: center;  Centre le texte dans chaque lien */ 
+        color: black;
+        /*flex: 1;  Permet aux liens de prendre également la largeur disponible */ 
+       /* text-align: center;  Aligne le texte au centre */ 
  }
  
  
- 
- nav a:hover
- 
- {
- 
-     background: #9eb488
- 
- }
- 
+
  
  
  label, #toggle
