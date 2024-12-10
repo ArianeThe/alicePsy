@@ -8,18 +8,23 @@
 <body>
 
 <nav th:fragment="navbar">
-    <link th:href="@{styles/css/app.css}"
-        rel="stylesheet" />
-    <div class="nav">
+    <!--<link th:href="@{styles/css/app.css}"
+        rel="stylesheet" />-->
+
+    <div style="padding: 0 5rem;
+  background-color: hsla(90, 20%, 50%, 0.4);">
 
         <label for="toggle">☰</label>
             <input type="checkbox" id="toggle">
-<div class="main-pages">
-    <a th:href="@{/}">Présentation</a>
-    <a th:href="@{/consultations}">Consultations</a>
-    <a th:href="@{/experiences}">Expériences</a>
-    <a th:href="@{/infos_pratiques}">Informations pratiques</a>
-    <a th:href="@{/prendre_rdv}">Prendre rendez-vous</a>
+
+<div style="display: flex; flex-wrap: wrap; margin: 0; padding: 0; font-size: 1.5rem;">
+
+    <a th:href="@{/}" style="list-style: none; flex: 0 0 20%; display: flex; justify-content: stretch;">Présentation</a>
+    <a th:href="@{/consultations}" style="list-style: none; flex: 0 0 20%; display: flex; justify-content: stretch;">Consultations</a>
+    <a th:href="@{/experiences}" style="list-style: none; flex: 0 0 20%; display: flex; justify-content: stretch;">Expériences</a>
+    <a th:href="@{/infos_pratiques}" style="list-style: none; flex: 0 0 20%; display: flex; justify-content: stretch;">Informations pratiques</a>
+    <a th:href="@{/prendre_rdv}" style="list-style: none; flex: 0 0 20%; display: flex; justify-content: stretch;">Prendre rendez-vous</a>
+
 </div>
     </div>    
 </nav>
