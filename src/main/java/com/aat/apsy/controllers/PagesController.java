@@ -3,7 +3,6 @@ package com.aat.apsy.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Controller
 public class PagesController {
 
@@ -27,8 +26,8 @@ public class PagesController {
         return "pages/infos_pratiques";
     }
 
-    @GetMapping("/prendre_rdv")
-    public String prendre_rdv() {
-        return "pages/prendre_rdv";
-    }
+   @GetMapping("/prendreRdv")
+   public String prendreRdv() {
+    return "pages/prendreRdv";
+   }
 }
