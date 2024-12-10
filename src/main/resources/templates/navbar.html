@@ -7,19 +7,23 @@
 </head>
 <body>
 
-<nav th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav th:fragment="navbar">
+    <link th:href="@{styles/css/app.css}"
+        rel="stylesheet" />
     <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li><a class="nav-link" th:href="@{/home}">Présentation</a></li>
 
-            <li><a class="nav-link" th:href="@{/consultations}">Consultations</a></li>
+        <div class="alice">Alice THEBAULT <br>
+        Psychologue Clinicienne</div>
 
-            <li><a class="nav-link" th:href="@{/experiences}">Expériences</a></li> 
-            
-            <li><a class="nav-link" th:href="@{/infos_pratiques}">Informations pratiques</a></li> 
-
-            <li><a class="nav-link" th:href="@{/prendre_rdv}">Prendre rendez-vous</a></li> 
-        </ul>
+        <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+<div class="main-pages">
+    <a th:href="@{/home}">Présentation</a>
+    <a th:href="@{/consultations}">Consultations</a>
+    <a th:href="@{/experiences}">Expériences</a>
+    <a th:href="@{/infos_pratiques}">Informations pratiques</a>
+    <a th:href="@{/prendre_rdv}">Prendre rendez-vous</a>
+</div>
     </div>    
 </nav>
 
