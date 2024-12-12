@@ -193,19 +193,13 @@
  
  /*formating Presentations*/
  
- .presentation{
- 
+ .presentation{ 
      font-size: 25px;
- 
      text-align: justify;
- 
      margin-top: 120px;
- 
      margin-left: 20%;
- 
      margin-right: 20%;
- 
- }
+  }
  
  
  
@@ -218,28 +212,32 @@
  
  
  /*formating consultation*/
- 
- .container1{
- 
-     margin-top: 110px;
- 
- }
- 
+ .containerC { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; margin: 20px; } 
+
+.columnC { 
+    padding: 20px; 
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */ }
+
+
+ /* Médias queries pour les petits écrans */ 
+    @media (max-width: 768px) 
+    { .containerC { grid-template-columns: repeat(2, 1fr); /* Passe à deux colonnes */ } }
+
+ /* Médias queries pour les très petits écrans */ 
+    @media (max-width: 480px) 
+    { .containerC { grid-template-columns: 1fr; /* Passe à une seule colonne */ } } 
  
  .ellipse {
- 
-     transform: scale(0.90) skew(0deg);
- 
-     font-size: x-large;
- 
-     border-radius: 250px;
- 
-     text-align: center;
- 
-     height: 500px;
- 
- }
- 
+      transform: scale(0.90) skew(0deg);
+      font-size: x-large;
+      border-radius: 250px;
+      text-align: center;
+      height: 500px;
+  }
+
  
  
  .monPsy{
