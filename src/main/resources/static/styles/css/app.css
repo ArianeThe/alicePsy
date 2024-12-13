@@ -11,7 +11,8 @@
  }*/
  
  
- 
+
+
  
  
  /*Formatting titre site*/
@@ -24,35 +25,7 @@
      font-weight: bold;
   }
  
- 
- 
- /*formatting img background
- 
- .arrierePlan{
- 
- background: url("../img/ArrièrePlanSite.jpg");
- 
-     background-size: cover;
- 
- }*/
- 
- 
- 
- /*formatting img background
- 
- .arrierePlanTrans{
- 
-     background: url("../img/ArrièrePlanSitecClair.jpg") no-repeat fixed;
- 
-     background-size: cover;
- 
-     -webkit-background-size: cover;
- 
-     -moz-background-size: cover;
- 
-     -o-background-size: cover;
- 
- }*/
+
  
  
  

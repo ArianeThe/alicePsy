@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <title>CONSULTATIONS</title>
-    </head>
-    <body>
-        <div th:insert="header :: header"></div>
-
-        <link th:href="@{styles/css/app.css}"
-        rel="stylesheet" />
-
-<div class="containerC">
-    <div class="columnC" style="text-align: justify">
-
-<p>
-<h2> SOUTIEN INDIVIDUEL</h2>
-Venir consulter n’est pas signe d’échec,certains problèmes requièrent d’être pensés avec un professionnel neutre et bienveillant.
-Parfois s’entretenir avec un psychologue peut être nécessaire pour surmonter certaines difficultés.<br>
+<head>
+    <meta charset="UTF-8">
+    <title>CONSULTATIONS</title>
+    <link th:href="@{styles/css/app.css}" rel="stylesheet" />
+</head>
+<body style="background: #d5dad1;">
+    <div th:insert="header :: header"></div>
+    
+    <br>
+    <br>
+   
+    <div class="containerC">
+        <div class="columnC" style="text-align: justify">
+            <h2> SOUTIEN INDIVIDUEL</h2>
+            <p>Venir consulter n’est pas signe d’échec, certains problèmes requièrent d’être pensés avec un professionnel neutre et bienveillant.
+                Parfois s’entretenir avec un psychologue peut être nécessaire pour surmonter certaines difficultés.</p>
             <div class="container">
                 <div class="interior">
                     <a class="btn" href="#soutienIndividuel">Lire plus...</a>
                 </div>
             </div>
-
-
-            <p>
+<br>
+<br>
+<br>
+<br>
+<br>
             <h2> PSYCHOTHERAPIE</h2>
-            Le psychologue est présent pour vous accompagner dans vos réflexions,
-            introspections à l’égard de votre histoire personnelle.<br>
+            <p>Le psychologue est présent pour vous accompagner dans vos réflexions, introspections à l’égard de votre histoire personnelle.</p>
             <div class="container">
                 <div class="interior">
                     <a class="btn" href="#psychotherapie">Lire plus...</a>
@@ -35,177 +35,118 @@ Parfois s’entretenir avec un psychologue peut être nécessaire pour surmonter
             </div>
         </div>
 
-
         <div class="columnC">
-
             <p class="ellipse">
-                <br>
-                Ensemble, nous <br>construirons un cadre sécure afin de <br>vous permettre
+                <br>Ensemble, nous <br>construirons un cadre sécure afin de <br>vous permettre
                 de cheminer vers un apaisement.
-                <br>
-                <br>
-                Nous réfléchirons à trouver votre propre grille de lecture afin de
+                <br><br>Nous réfléchirons à trouver votre propre grille de lecture afin de
                 promouvoir votre autonomie de pensée et d'action.
-                <br>
-                <br>
-                Nous travaillerons à renforcer vos ressources et <br> vous libérer de fonctionnements
+                <br><br>Nous travaillerons à renforcer vos ressources et <br> vous libérer de fonctionnements
                 délétères.
             </p>
         </div>
 
-
         <div class="columnC">
-            <p>
             <h2>SOUTIEN A LA PARENTALITE</h2>
-            La plupart des psychologues ont une appétence pour un champ d'expertise en particulier.
-            Le mien est centré autour de la famille existante ou à venir.<br>
+            <p>La plupart des psychologues ont une appétence pour un champ d'expertise en particulier.
+                Le mien est centré autour de la famille existante ou à venir.</p>
             <div class="container">
                 <div class="interior">
                     <a class="btn" href="#parentalité">Lire plus...</a>
                 </div>
             </div>
 
-            <p>
-            <h2>THERAPIE DE COUPLES</h2>
-            Avancer à deux est un exercice complexe qui nécessite parfois l’intervention
-            d’un tiers afin de renouer avec la parole et de retrouver une harmonie de couple.<br>
+            <br>
+<br>
+<br>
+<br>
+<br>
 
+            <h2>THERAPIE DE COUPLES</h2>
+            <p>Avancer à deux est un exercice complexe qui nécessite parfois l’intervention
+                d’un tiers afin de renouer avec la parole et de retrouver une harmonie de couple.</p>
             <div class="container">
                 <div class="interior">
                     <a class="btn" href="#couple">Lire plus...</a>
                 </div>
             </div>
-
         </div>
     </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <div th:insert="footer :: footer"></div>
-</div>
 
-
-
-
-
-
-
-
-
-<!--formatage de la modal pop up#}-->
-<div id="soutienIndividuel" class="modal-window">
-    <div>
-        <a href="#" title="Close" class="modal-close">Close</a>
-        <!-- Your Modal Content Goes Here -->
-
-<!--popup soutien individuel#}-->
-    <div style="margin-top: 10%" class="soutienIndividuel">
-        <h2>SOUTIEN INDIVIDUEL</h2>
-        <br>
-        <h4> Enfants (à partir de 3ans), adolescents, adultes.</h4>
-
-        <p>   Différentes difficultés peuvent vous
-            amener à venir me rencontrer :
-
-        <ul style="text-align: justify">
-            <li> émotionnelles (confiance en soi, dépression, angoisses,
-                troubles du sommeil, troubles obsessionnels compulsifs...)</li>
-
-            <li> scolaires (harcèlement, phobie scolaire, perte de motivation...)</li>
-
-            <li> comportementales (agressivité envers soi-même ou les autres, troubles
-                alimentaires, addictions...)</li>
-
-            <li> relationnelles (communication avec les autres, inhibitions,sentiment
-                d’incompréhension, solitude, harcèlement...)</li>
-            
-            <li> épisodes de vie difficile (deuil, traumatismes, séparation, maladie, burn out, violence...)</li>
-
-        </ul>
-
-    
+    <!-- Modal Soutien Individuel -->
+    <div id="soutienIndividuel" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <div style="margin-top: 10%" class="soutienIndividuel">
+                <h2>SOUTIEN INDIVIDUEL</h2>
+                <br>
+                <h4> Enfants (à partir de 3 ans), adolescents, adultes.</h4>
+                <p>Différentes difficultés peuvent vous amener à venir me rencontrer :</p>
+                <ul style="text-align: justify">
+                    <li> émotionnelles (confiance en soi, dépression, angoisses, troubles du sommeil, troubles obsessionnels compulsifs...)</li>
+                    <li> scolaires (harcèlement, phobie scolaire, perte de motivation...)</li>
+                    <li> comportementales (agressivité envers soi-même ou les autres, troubles alimentaires, addictions...)</li>
+                    <li> relationnelles (communication avec les autres, inhibitions, sentiment d’incompréhension, solitude, harcèlement...)</li>
+                    <li> épisodes de vie difficile (deuil, traumatismes, séparation, maladie, burn out, violence...)</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 
-
-<!--{#popup psychothérapie#}-->
-<div id="psychotherapie" class="modal-window">
-    <div>
-        <a href="#" title="Close" class="modal-close">Close</a>
-        <!-- Your Modal Content Goes Here -->
-
-    <div style="margin-top: 10%" class="psychotherapie">
-        <h2>PSYCHOTHERAPIE</h2>
-        <br>
-
-        <ul style="text-align: justify">
-            <li> La psychothérapie est un travail d'introspection et d'évolution personnelle.
-            </li>
-            <br>
-            <li> En vous mettant au coeur de la réflexion, vous cheminerez à trouver vos propres façon de penser et valoriserez votre subjectivité</li>
-            <br>
-            <li> En apprenant à mieux vous connaître, vous pourrez vous engager dans un processus de changement éclairé par vos valeurs et convictions vous libérant ainsi de points de blocages,
-                répétitions...</li>
-
-        </ul>
+    <!-- Modal Psychothérapie -->
+    <div id="psychotherapie" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <div style="margin-top: 10%" class="psychotherapie">
+                <h2>PSYCHOTHERAPIE</h2>
+                <br>
+                <ul style="text-align: justify">
+                    <li> La psychothérapie est un travail d'introspection et d'évolution personnelle.</li>
+                    <li> En vous mettant au cœur de la réflexion, vous cheminerez à trouver vos propres façons de penser et valoriserez votre subjectivité.</li>
+                    <li> En apprenant à mieux vous connaître, vous pourrez vous engager dans un processus de changement éclairé par vos valeurs et convictions, vous libérant ainsi de points de blocages, répétitions...</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
 
-
-
-<!--{#popup soutien a la parentalité#}-->
-        <div id="parentalité" class="modal-window">
-            <div>
-                <a href="#" title="Close" class="modal-close">Close</a>
-        <h2>SOUTIEN A LA PARENTALITE</h2>
-        <br>
-        <ul style="text-align: justify">
-            <li> accompagnement autour de la grossesse et de ses difficultés (angoisses, fausse couche, deuil d'enfant, post-partum...)
-            </li>
-            <br>
-            <li> investie dans le cadre de l'infertilité, je reçois de nombreux patients en parcours de procréation médicalement assistée (PMA)</li>
-            <br>
-            <li> j'accompagne également les enfants lorsqu'ils souhaitent discuter de leur histoire et origines (PMA, don de gamètes, adoption...)</li>
-            <br>
-            <li> je reçois également les parents qui veulent évoquer leur parentalité et les difficultés qu'ils peuvent rencontrer avec leur enfant</li>
-            <br>
-            <li> analyse de votre histoire familiale</li>
-
-        </ul>
-
-    
+    <!-- Modal Soutien à la Parentalité -->
+    <div id="parentalité" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <div style="margin-top: 10%" class="parentalité">
+                <h2>SOUTIEN A LA PARENTALITE</h2>
+                <br>
+                <ul style="text-align: justify">
+                    <li> accompagnement autour de la grossesse et de ses difficultés (angoisses, fausse couche, deuil d'enfant, post-partum...)</li>
+                    <li> investie dans le cadre de l'infertilité, je reçois de nombreux patients en parcours de procréation médicalement assistée (PMA)</li>
+                    <li> j'accompagne également les enfants lorsqu'ils souhaitent discuter de leur histoire et origines (PMA, don de gamètes, adoption...)</li>
+                    <li> je reçois également les parents qui veulent évoquer leur parentalité et les difficultés qu'ils peuvent rencontrer avec leur enfant</li>
+                    <li> analyse de votre histoire familiale</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
 
-
-
-<!--{#popup Thérapie de couples#}-->
+    <!-- Modal Thérapie de Couple -->
     <div id="couple" class="modal-window">
         <div>
             <a href="#" title="Close" class="modal-close">Close</a>
-        <h2>THERAPIE DE COUPLE</h2>
-        <br>
-        <ul style="text-align: justify">
-            <li> troubles de la communication
-            </li>
-            <br>
-            <li> incompréhension des besoins du partenaire et de soi-même
-            </li>
-            <br>
-            <li> perte de projets communs</li>
-            <br>
-            <li> difficultés sexuelles</li>
-            <br>
-            <li> adultères</li>
-            <br>
-            <li> séparation envisagée</li>
-
-        </ul>
+            <div style="margin-top: 10%" class="couple">
+                <h2>THERAPIE DE COUPLE</h2>
+                <br>
+                <ul style="text-align: justify">
+                    <li> troubles de la communication</li>
+                    <li> incompréhension des besoins du partenaire et de soi-même</li>
+                    <li> perte de projets communs</li>
+                    <li> difficultés sexuelles</li>
+                    <li> adultères</li>
+                    <li> séparation envisagée</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
