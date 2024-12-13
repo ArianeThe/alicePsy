@@ -7,11 +7,11 @@
     <body>
         <div th:insert="header :: header"></div>
 
-        <div class="row gy-4 gy-md-0">
-            <div class="col-6 col-md-3">
-                <img style="width: 300px; margin-top: 120px" src="{{ asset('img/Alice.jpg') }}" alt="THEBAULT Alice" >
+        <div class="containerC">
+            <div class="columnC">
+                <img style="width: 300px; margin-top: 120px" th:src="@{/img/Alice.jpg}" alt="THEBAULT Alice" >
             </div>
-            <div class="col-12 col-md-6" style="text-align: center">
+            <div class="columnC" style="text-align: center">
                 <h4 style="font-weight: bold">Proche de la Chapelle sur Erdre, Sucé sur Erdre, Grandchamps des Fontaines, Treillières, Carquefou et Nort sur Erdre</h4>
                 <br>
         <h4>Durée et tarif des consultations (à compter du 01/01/2025)</h4>
@@ -26,18 +26,17 @@
                 Séance de 40 minutes, au tarif de 50€<br>
 
             </div>
-            <div class="col-6 col-md-3">
-                <img style="width: 300px; margin-top: 120px" src="{{ asset('img/cabinet.jpg') }}" alt="Cabinet Psychologue">
+            <div class="columnC">
+                <img style="width: 300px; margin-top: 120px" th:src="@{/img/cabinet.jpg}" alt="Cabinet Psychologue">
             </div>
         </div>
 
 
-        <div class="row">
 <div class="col" style="text-align: center">
     <h4 style="font-weight: bold">Le cabinet est accessible aux personnes à mobilité réduite</h4>
         <h4 >Règlement et facturation</h4>
-           <h6> Le règlement des consultations se fait à l’issue de chaque entretien, <br>
-        par chèque libellé à l’ordre d’Alice Thébault, ou bien par espèces.<br></h6>
+           <h4> Le règlement des consultations se fait à l’issue de chaque entretien, <br>
+        par chèque libellé à l’ordre d’Alice Thébault, ou bien par espèces.<br></h4>
 
     Le titre de psychologue clinicien garantit un Master II en psychologie clinique et psychopathologie. <br>
     Ce titre est protégé et enregistré auprès de l'Agence Régionale de Santé protégeant ainsi les patients contre l'exercice illégal de cette profession.<br>
@@ -53,7 +52,7 @@
 
     <div class="container">
         <div class="interior">
-            <a class="btn" href="#manifeste"><img style="width: 30px;" src="{{ asset('img/monpsy1.jpg') }}" alt="monPsy"></a>
+            <a class="btn" href="#manifeste"><img style="width: 30px;" th:src="@{/img/monpsy1.jpg}" alt="monPsy"></a>
         </div>
     </div>
 
@@ -73,7 +72,6 @@
 
 </div>
         </div>
-        <div class="row">
             <br>
             <br>.
             <br>.
