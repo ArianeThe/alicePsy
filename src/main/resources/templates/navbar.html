@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>NavigationBar</title>
-
+    
+ <link th:href="@{styles/css/app.css}"
+        rel="stylesheet" />
 </head>
 <body>
 
-<nav th:fragment="navbar">
-    <!--<link th:href="@{styles/css/app.css}"
-        rel="stylesheet" />-->
 
-    <div style="padding: 0 5rem;
-  background-color: #a4b197(90, 20%, 50%, 0.4);">
 
-        <label for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
+<nav th:fragment="navbar"> 
 
-<div style="display: flex; flex-wrap: wrap; margin: 0; padding: 0; font-size: 1.5rem;">
+    <div class="navbar-container">
+  
+        <input type="checkbox" id="toggle"> 
+        <label for="toggle" class="hamburger">☰</label> 
+        
 
-    <a th:href="@{/}" style="list-style: none; flex: 0 0 20%;  text-decoration: none;display: flex; justify-content: stretch;">Présentation</a>
-    <a th:href="@{/consultations}" style="list-style: none; flex: 0 0 20%;  text-decoration: none;display: flex; justify-content: stretch;">Consultations</a>
-    <a th:href="@{/experiences}" style="list-style: none; flex: 0 0 20%;  text-decoration: none;display: flex; justify-content: stretch;">Expériences</a>
-    <a th:href="@{/infos_pratiques}" style="list-style: none; flex: 0 0 20%;  text-decoration: none;display: flex; justify-content: stretch;">Informations pratiques</a>
-    <a th:href="@{/prendreRdv}" style="list-style: none; flex: 0 0 20%;  text-decoration: none;display: flex; justify-content: stretch;">Prendre rendez vous</a>
-    
-
+        <div class="menu"> 
+            <a th:href="@{/}" class="menu-item">Présentation</a> 
+            <a th:href="@{/consultations}" class="menu-item">Consultations</a> 
+            <a th:href="@{/experiences}" class="menu-item">Expériences</a> 
+            <a th:href="@{/infos_pratiques}" class="menu-item">Informations pratiques</a> 
+            <a th:href="@{/prendreRdv}" class="menu-item">Prendre rendez vous</a> 
+        </div> 
+    </div> 
 </div>
-    </div>    
 </nav>
 
 </body>
